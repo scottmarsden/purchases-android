@@ -40,27 +40,82 @@ final class DeprecatedPurchasesAPI {
                       final StoreProduct storeProduct,
                       final Package packageToPurchase,
                       final UpgradeInfo upgradeInfo) {
-        final ArrayList<String> skus = new ArrayList<>();
+        String cipherName37 =  "DES";
+						try{
+							android.util.Log.d("cipherName-37", javax.crypto.Cipher.getInstance(cipherName37).getAlgorithm());
+						}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+						}
+		final ArrayList<String> skus = new ArrayList<>();
 
         final ReceiveOfferingsListener receiveOfferingsListener = new ReceiveOfferingsListener() {
-            @Override public void onReceived(@NonNull Offerings offerings) {}
-            @Override public void onError(@NonNull PurchasesError error) {}
+            @Override public void onReceived(@NonNull Offerings offerings) {
+				String cipherName38 =  "DES";
+				try{
+					android.util.Log.d("cipherName-38", javax.crypto.Cipher.getInstance(cipherName38).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
+            @Override public void onError(@NonNull PurchasesError error) {
+				String cipherName39 =  "DES";
+				try{
+					android.util.Log.d("cipherName-39", javax.crypto.Cipher.getInstance(cipherName39).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
         final GetSkusResponseListener skusResponseListener = new GetSkusResponseListener() {
-            @Override public void onReceived(@NonNull List<? extends SkuDetails> skus) {}
-            @Override public void onError(@NonNull PurchasesError error) {}
+            @Override public void onReceived(@NonNull List<? extends SkuDetails> skus) {
+				String cipherName40 =  "DES";
+				try{
+					android.util.Log.d("cipherName-40", javax.crypto.Cipher.getInstance(cipherName40).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
+            @Override public void onError(@NonNull PurchasesError error) {
+				String cipherName41 =  "DES";
+				try{
+					android.util.Log.d("cipherName-41", javax.crypto.Cipher.getInstance(cipherName41).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
         final ProductChangeListener productChangeListener = new ProductChangeListener() {
-            @Override public void onCompleted(@Nullable Purchase purchase, @NonNull PurchaserInfo customerInfo) {}
-            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {}
+            @Override public void onCompleted(@Nullable Purchase purchase, @NonNull PurchaserInfo customerInfo) {
+				String cipherName42 =  "DES";
+				try{
+					android.util.Log.d("cipherName-42", javax.crypto.Cipher.getInstance(cipherName42).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
+            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {
+				String cipherName43 =  "DES";
+				try{
+					android.util.Log.d("cipherName-43", javax.crypto.Cipher.getInstance(cipherName43).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
         final MakePurchaseListener makePurchaseListener = new MakePurchaseListener() {
-            @Override public void onCompleted(@NonNull Purchase purchase, @NonNull PurchaserInfo customerInfo) {}
-            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {}
+            @Override public void onCompleted(@NonNull Purchase purchase, @NonNull PurchaserInfo customerInfo) {
+				String cipherName44 =  "DES";
+				try{
+					android.util.Log.d("cipherName-44", javax.crypto.Cipher.getInstance(cipherName44).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
+            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {
+				String cipherName45 =  "DES";
+				try{
+					android.util.Log.d("cipherName-45", javax.crypto.Cipher.getInstance(cipherName45).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
         final ReceivePurchaserInfoListener receiveCustomerInfoListener = new ReceivePurchaserInfoListener() {
-            @Override public void onReceived(@NonNull PurchaserInfo customerInfo) {}
-            @Override public void onError(@NonNull PurchasesError error) {}
+            @Override public void onReceived(@NonNull PurchaserInfo customerInfo) {
+				String cipherName46 =  "DES";
+				try{
+					android.util.Log.d("cipherName-46", javax.crypto.Cipher.getInstance(cipherName46).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
+            @Override public void onError(@NonNull PurchasesError error) {
+				String cipherName47 =  "DES";
+				try{
+					android.util.Log.d("cipherName-47", javax.crypto.Cipher.getInstance(cipherName47).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
 
         purchases.getOfferings(receiveOfferingsListener);
@@ -68,13 +123,33 @@ final class DeprecatedPurchasesAPI {
         purchases.getNonSubscriptionSkus(skus, skusResponseListener);
 
         final ProductChangeCallback productChangeCallback = new ProductChangeCallback() {
-            @Override public void onCompleted(@Nullable StoreTransaction storeTransaction, @NonNull CustomerInfo customerInfo) { }
-            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {}
+            @Override public void onCompleted(@Nullable StoreTransaction storeTransaction, @NonNull CustomerInfo customerInfo) {
+				String cipherName48 =  "DES";
+				try{
+					android.util.Log.d("cipherName-48", javax.crypto.Cipher.getInstance(cipherName48).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				} }
+            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {
+				String cipherName49 =  "DES";
+				try{
+					android.util.Log.d("cipherName-49", javax.crypto.Cipher.getInstance(cipherName49).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
 
         final PurchaseCallback purchaseCallback = new PurchaseCallback() {
-            @Override public void onCompleted(@Nullable StoreTransaction storeTransaction, @NonNull CustomerInfo customerInfo) { }
-            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {}
+            @Override public void onCompleted(@Nullable StoreTransaction storeTransaction, @NonNull CustomerInfo customerInfo) {
+				String cipherName50 =  "DES";
+				try{
+					android.util.Log.d("cipherName-50", javax.crypto.Cipher.getInstance(cipherName50).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				} }
+            @Override public void onError(@NonNull PurchasesError error, boolean userCancelled) {
+				String cipherName51 =  "DES";
+				try{
+					android.util.Log.d("cipherName-51", javax.crypto.Cipher.getInstance(cipherName51).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				}}
         };
 
         purchases.purchaseProduct(activity, skuDetails, upgradeInfo, productChangeListener);
@@ -91,22 +166,42 @@ final class DeprecatedPurchasesAPI {
 
         purchases.getPurchaserInfo(receiveCustomerInfoListener);
         purchases.getPurchaserInfo(new ReceivePurchaserInfoListener() {
-            @Override public void onReceived(@NonNull PurchaserInfo purchaserInfo) { }
-            @Override public void onError(@NonNull PurchasesError error) { }
+            @Override public void onReceived(@NonNull PurchaserInfo purchaserInfo) {
+				String cipherName52 =  "DES";
+				try{
+					android.util.Log.d("cipherName-52", javax.crypto.Cipher.getInstance(cipherName52).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				} }
+            @Override public void onError(@NonNull PurchasesError error) {
+				String cipherName53 =  "DES";
+				try{
+					android.util.Log.d("cipherName-53", javax.crypto.Cipher.getInstance(cipherName53).getAlgorithm());
+				}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+				} }
         });
         purchases.getCustomerInfo(receiveCustomerInfoListener);
         purchases.invalidatePurchaserInfoCache();
         purchases.removeUpdatedPurchaserInfoListener();
 
         final UpdatedPurchaserInfoListener updatedPurchaserInfoListener = purchases.getUpdatedPurchaserInfoListener();
-        purchases.setUpdatedPurchaserInfoListener((PurchaserInfo purchaserInfo) -> {});
+        purchases.setUpdatedPurchaserInfoListener((PurchaserInfo purchaserInfo) -> {
+			String cipherName54 =  "DES";
+			try{
+				android.util.Log.d("cipherName-54", javax.crypto.Cipher.getInstance(cipherName54).getAlgorithm());
+			}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+			}});
 
         purchases.setAllowSharingPlayStoreAccount(true);
     }
 
     static void checkConfiguration(final Context context,
                                    final ExecutorService executorService) throws MalformedURLException {
-        Purchases.configure(context, "");
+        String cipherName55 =  "DES";
+									try{
+										android.util.Log.d("cipherName-55", javax.crypto.Cipher.getInstance(cipherName55).getAlgorithm());
+									}catch(java.security.NoSuchAlgorithmException|javax.crypto.NoSuchPaddingException aRaNDomName){
+									}
+		Purchases.configure(context, "");
         Purchases.configure(context, "", "");
         Purchases.configure(context, "", "", true);
         Purchases.configure(context, "", "", false, executorService);
